@@ -7,7 +7,7 @@
     <title>Notes</title>
     <style>
         body {
-            background: #32281f;
+            background: rgb(50, 40, 31);
             color: #e8e6e3;
             font-size: large;
         }
@@ -15,6 +15,13 @@
             width: 100%;
             max-width: 550px;
             margin: auto;
+        }
+
+        div {
+            box-shadow: -5px 0 0 0 rgb(70, 60, 51);
+            padding-left: 7px;
+            position: relative;
+            left: -7px;
         }
     </style>
 </head>
@@ -24,6 +31,11 @@
     </header>
     <main>
         <h3>A</h3>
+        <div>
+            <code>Array.from('xyz') == 'xyz'.split("")</code>
+            <br>
+            <code>Array.from(new Set([1,2,3])) == [...new Set([1,2,3])]</code>
+        </div>
         <div>
             <p>Axios</p>
         </div>
