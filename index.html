@@ -69,6 +69,18 @@
             <p>n ** .5 == Math.sqrt(n)</p>
         </div>
         <hr>
+        <h3>O</h3>
+        <div>
+            <code>let a = {x: 2}</code><br>
+            <code>let copy = Object.create(a)</code><br>
+            <code>copy.y = 54</code><br>
+            <code>Object.keys(copy) // ["y"]</code><br>
+            <code>copy.x // 2</code><br>
+            <code>a.x = 100</code><br>
+            <code>copy.x // 100</code>
+            <p>From: <a href="https://www.codewars.com/kata/52ffcf5eaff455b3c200074b">Mirror, mirror</a></p>
+        </div>
+        <hr>
         <h3>P</h3>
         <div>
             <code>padStart(length, char)</code>
