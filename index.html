@@ -133,8 +133,9 @@
         <div>
             <p>Variable in RegExp</p>
     <pre>
-    let data = 'war';
+    let data = 'car';
     let reg = new RegExp(`^${data}`, 'gi');
+    let reg2 = new RegExp(`\\b${data}\\b`); // /\bcar\b/
     </pre>
         </div>
     </main>
