@@ -118,6 +118,21 @@
             <code>padEnd(length, char)</code>
         </div>
         <hr>
+        <h3>R</h3>
+        <div>
+            <p>RegExp for groups of the same char</p>
+            <code>/(.)\1*/g</code><br>
+            <code>"311252333".match(/(.)\1*/g) => [ "3", "11", "2", "5", "2", "333" ]</code>
+        </div>
+        <div>
+            <p>Variable in RegExp</p>
+    <pre>
+    let data = 'car';
+    let reg = new RegExp(`^${data}`, 'gi');
+    let reg2 = new RegExp(`\\b${data}\\b`); // /\bcar\b/
+    </pre>
+        </div>
+        <hr>
         <h3>S</h3>
         <div>
             <p>Adding background for <code>select</code>: you also have to style <code>option</code> tag.</p>
@@ -140,15 +155,6 @@
         <h3>U</h3>
         <div>Using Unicode in JS: "\u25A1" will display &#9633;</div>
         <hr>
-        <h3>V</h3>
-        <div>
-            <p>Variable in RegExp</p>
-    <pre>
-    let data = 'car';
-    let reg = new RegExp(`^${data}`, 'gi');
-    let reg2 = new RegExp(`\\b${data}\\b`); // /\bcar\b/
-    </pre>
-        </div>
     </main>
 </body>
 </html>
