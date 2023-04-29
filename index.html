@@ -148,6 +148,12 @@
             <p>SubtleCrypto.digest()</p>
         </div>
         <div>
+            <p>localecompare</p>
+            <code>let word = "AlphaBetaGamma".split("")</code><br><br>
+            <code>word.sort((x,y)=> x.localeCompare(y)).join("") // "aaaaABeGhlmmpt"</code><br><br>
+            <code>word.sort((x,y)=> x.localeCompare(y, 'en', {sensitivity:'base'})).join("") // "AaaaaBeGhlmmpt"</code>
+        </div>
+        <div>
             <p>const symbol = new Symbol(); // TypeError</p>
             <p>Use without <code>new</code></p>
         </div>
